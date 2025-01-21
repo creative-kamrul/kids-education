@@ -96,17 +96,81 @@ nav{
 .banner .text .bbtn{
     background: #3f3a3a;
 }
+/* =====================curriculum=========================== */
+#curriculum{
+    background: url(/images/bg.png);
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+#curriculum .title{
+    font-size: 46px;
+    text-align: center;
+}
+#curriculum .curriculum-item{
+    width: 1170px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#curriculum .curriculum-item .one{
+    width: 280px;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(223,224,234,100) 0%,
+     rgba(148,194,233,0.16850490196078427) 100%);
+    border-radius: 10px;
+    text-align: center;
+}
+#curriculum .curriculum-item .one .item-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+#curriculum .curriculum-item .one .dis{
+    font-size: 14px;
+    margin: 10px 0;
+}
+#curriculum .curriculum-item .one a{
+    text-decoration: none;
+    color: #FEA301;
+}
+#curriculum .curriculum-item .two a{
+    color: #e03737;
+}
+#curriculum .curriculum-item .three a{
+    color: #00ff80;
+}
+#curriculum .curriculum-item .two{
+    background: rgb(238,174,202);
+    background: linear-gradient(16deg, rgba(238,174,202,1) 0%, rgba(168,175,126,0.03125) 90%);
+}
+#curriculum .curriculum-item .three{
+    background: rgb(34,193,195);
+background: linear-gradient(16deg, rgba(34,193,195,1) 0%, rgba(253,45,84,0.08727240896358546) 40%);
+}
+ .s-arrow{
+    background: #FEA301;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 50%;
+ }
+ .arrow-btn{
+    text-align: center;
+    cursor: pointer;
+    margin-top: 100px;
+ }
+
+
 
 /* ======================================== */
 
 @media screen and (max-width: 576px) {
     #header{
         width: auto;
+        margin: 0 auto;
     }
     nav{
-        justify-content: space-around;
+        justify-content: space-between;
     }
-    ul,  button{
+    ul,  button, .cs{
         display: none;
     }
     .bars{
@@ -134,6 +198,25 @@ nav{
     .banner .text .bbtn{
         background: #3f3a3a;
         display: inline-block;
+    }
+    /* #curriculum {
+        text-align: center;
+        width: auto;
+    } */
+    #curriculum .curriculum-item{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+
+    }
+    #curriculum .curriculum-item .one{
+        margin: 30px 0;
+    }
+    #curriculum .title{
+        font-size: 32px;
+    }
+    .arrow-btn{
+        display: none;
     }
    
 }
