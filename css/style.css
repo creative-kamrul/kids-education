@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
+
+
+
+.open-sans-normal {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.btn-primery{
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #FEA301;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+#header{
+    width: 1170px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ ul li{
+    display: inline-block;
+    margin: 10px 32px;
+ }
+ ul li a{
+    text-decoration: none;
+ }
+ ul li .mone{
+    color: #FEA301;
+ }
+ ul li .mtwo{
+    color: #375ee0;
+ }
+ ul li .mthree{
+    color: #46d9e4;
+ }
+ ul li .mfour{
+    color: #5D58EF;
+ }
+ button a {
+    text-decoration: none;
+    color: #ffffff;
+ }
+ .logo{
+    display: flex;
+    align-items: center;
+ }
+ .logo .cs{
+    font-size: 32px;
+    font-weight: bold;
+ }
+ .bars{
+    display: none;
+ }
+
+ /* =================banner================= */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+.clrone{
+    color: #FEA301;
+}
+.clrtwo{
+    color: #375ee0;
+}
+.banner .text{
+    margin-top: 110PX;
+    width: 580px;
+}
+.banner .text .title{
+    font-size: 55px;
+}
+.banner .text .discription{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.banner .text .bbtn{
+    background: #3f3a3a;
+}
+
+/* ======================================== */
+
+@media screen and (max-width: 576px) {
+    #header{
+        width: auto;
+    }
+    nav{
+        justify-content: space-around;
+    }
+    ul,  button{
+        display: none;
+    }
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin-bottom: 100px;
+    }
+    .banner .text{
+        width: auto;
+        text-align: center;
+    }
+    .banner .text .title{
+        font-size: 32px;
+    }
+    .image{
+        width: 80%;
+        margin: auto;
+    }
+    .image img{
+        width: 100%;
+    }
+    .banner .text .bbtn{
+        background: #3f3a3a;
+        display: inline-block;
+    }
+   
+}
+
+
+
+
+
